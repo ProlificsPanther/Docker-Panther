@@ -1,14 +1,14 @@
-# Dockerize PantherClient
-A sample dockerfile to dockerize Panther client application. It will help you as a refereance to dockerize your Panther client application. We are also providing built sample docker panther image and can be pull directly using docker pull command from [Docker Hub](https://hub.docker.com/repository/docker/prolificspanther/pantherclient).  
+# Dockerize Panther Client
+Provided is a Dockerfile that can be used to dockerize  your Panther Client application. Also provided are samples of a Docker Panther image  that can  be pulled directly using  the docker pull command from [Docker Hub](https://hub.docker.com/repository/docker/prolificspanther/pantherclient).  
 
 ### Usage
-* Panther Web 5.5*
+* Panther Client 5.5*
 
 # Prerequisites: (Required)
   * Install Docker Engine from  https://docs.docker.com/get-docker/ 
   
   Provided in Container
-  * Panther 5.5*
+  * Panther Client 5.5*
   * docker-entrypoint.sh (Panther App running)
     
  # Downloading the Panther Docker image::
@@ -19,10 +19,10 @@ A sample dockerfile to dockerize Panther client application. It will help you as
  # Contents of the container:
  * JDK
  * Ubuntu
- * Panther Web 553.07 (License Inclusive)
+ * Panther Client 553.07 (License Inclusive)
  
  # How to use this Image
-   This image is designed to run Panther client in Ubuntu based container. 
+   This image is designed to run Panther Client in  an Ubuntu based container. 
  
 * Creating the container:
   docker run --name=pantherclient -d prolificspanther/pantherclient
@@ -30,12 +30,12 @@ A sample dockerfile to dockerize Panther client application. It will help you as
 * Enter the container:
   docker exec -ti pantherclient bash
 
-* Test our Samples(already packed in image):
+* Test our Samples(included in image):
   
 # To access the image from Openshift:
 1) Create a Project
 2) Click on Deploy an image
-3) Search for "prolificspanther/pantherweb", specify the name.
+3) Search for "prolificspanther/pantherclient", specify the name.
 4) Click "Deploy".
 5) Go to the Pods section, as soon as it changes from "Creating container" to "Running", enter into the Pod and switch to "Terminal" tab.
 6) Run the command( to test prodev):
