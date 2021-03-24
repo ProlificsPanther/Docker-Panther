@@ -1,28 +1,47 @@
 #Setting the base OS
-FROM rhel
+FROM ubuntu
 
 #Name of Creator
 LABEL Author="Panther Support"
 LABEL Corporation="Prolifics Inc."
 
-#Libraries required for Panther but doesn't come pre-packed with RedHat 7
-RUN yum -y install openmotif
 
-#Install LibXpm.so.4 which isn't coming packed with openmotif latest
-COPY libXpm.so.4 /usr/lib64
+#Setup lib
+
+WORKDIR /usr/lib64
+RUN apt-get update  &&\   
+    apt-get install libjpeg62 
+RUN apt-get install -y libxm4
 
 #Setting up JDK
 RUN mkdir -p /Apps/ProlificsContainer
 WORKDIR /Apps/ProlificsContainer
-COPY jdk-8u192-linux-x64.rpm .
-RUN rpm -ivh jdk-8u192-linux-x64.rpm
-RUN rm jdk-8u192-linux-x64.rpm
-ENV SMJAVALIBRARY=/usr/java/jdk1.8.0_192-amd64/jre/lib/amd64/server/libjvm.so
+# Install OpenJDK-8
+RUN apt-get update && \
+    apt-get install -y openjdk-8-jdk && \
+    apt-get install -y ant && \
+    apt-get clean;
+
+# Fix certificate issues
+RUN apt-get update && \
+    apt-get install ca-certificates-java && \
+    apt-get clean && \
+    update-ca-certificates -f;
+ENV SMJAVALIBRARY=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
+
+
+# Setup JAVA_HOME -- useful for docker commandline
+ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
+RUN export JAVA_HOME
+ENV SMJAVALIBRARY=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
 
 #Copy and install Lynx
-COPY lynx.rpm .
-RUN yum -y localinstall lynx.rpm
-RUN rm lynx.rpm
+RUN apt-get update    && \
+    apt-get install -y --no-install-recommends  \
+    lynx && \
+    rm -rf /var/lib/apt/lists/*
+
+CMD ["lynx", "-h"]
 
 #Unpacking Panther
 RUN mkdir -p /Apps/ProlificsContainer/prlstdwb553.07
