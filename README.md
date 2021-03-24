@@ -1,5 +1,5 @@
-# Dockerize PantherWeb
-A sample dockerfile to dockerize Panther web application. It will help you as a refereance to containerize your Panther client application. We are also providing built sample docker panther image and can be pull directly using docker pull command from [Docker Hub](https://hub.docker.com/repository/docker/prolificspanther/pantherweb).
+# Dockerize Panther Web
+Provided is a Dockerfile that can be used to dockerize  your Panther Client application. Also provided are samples of a Docker Panther image  that can  be pulled directly using the docker pull command from [Docker Hub](https://hub.docker.com/repository/docker/prolificspanther/pantherweb).
 
 ### Usage
 * Panther Web 5.5*
@@ -14,7 +14,7 @@ A sample dockerfile to dockerize Panther web application. It will help you as a 
   * Tomcat.zip(included)
   * TestMigration.zip(included)
   * lynx.rpm (character mode browser, suited for Linux systems)
-  * docker-entrypoint.sh ( keeps catalina and Panther App running)
+  * docker-entrypoint.sh (keeps Catalina and Panther App running)
   
  # Prerequisites: (Optional)
    Enable port 8080 from your host machine so that you can check your URL outside the host machine also.
