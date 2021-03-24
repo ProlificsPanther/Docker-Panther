@@ -1,6 +1,5 @@
-# What is Panther?
-Panther is a RAD platform that enables the development of mobile, web and desktop applications.
-For more information on Panther components, please visit https://www.prolifics.com/jampanther-tools
+# Dockerize PantherWeb
+A sample dockerfile to dockerize Panther web application. It will help you as a refereance to containerize your Panther client application. We are also providing built sample docker panther image and can be pull directly using docker pull command from [Docker Hub](https://hub.docker.com/repository/docker/prolificspanther/pantherweb).
 
 ### Usage
 * Panther Web 5.5*
@@ -10,8 +9,8 @@ For more information on Panther components, please visit https://www.prolifics.c
   
   Provided in Container
   * Panther 5.5*
-  * JDK : https://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html
-  * Linux Server(Red Hat)
+  * JDK
+  * Linux Server(Ubuntu)
   * Tomcat.zip(included)
   * TestMigration.zip(included)
   * lynx.rpm (character mode browser, suited for Linux systems)
