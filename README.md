@@ -21,6 +21,7 @@ Provided is a Dockerfile that can be used to dockerize  your Panther Client appl
     
  # Downloading the Panther Docker image::
    Use the command  below
+   
    docker pull prolificspanther/pantherweb  
    
  # Contents of the container:
