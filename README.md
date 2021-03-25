@@ -10,6 +10,7 @@ Provided is a Dockerfile that can be used to dockerize  your Panther Client appl
   Provided in Container
   * Panther Client 5.5*
   * JDK 8
+  * Linux Server(Ubuntu 20.04)
   * docker-entrypoint.sh (Panther App running)
     
  # Downloading the Panther Docker image::
