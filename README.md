@@ -41,7 +41,7 @@ Provided is a Docker file that can be used to dockerize  your Panther Client app
   docker exec -ti pantherweb bash
  
   ### Panther Editor: 
-* Open the Panther Editor using the command
+  * Open the Panther Editor using the command
   prodev
 
   ### Web Samples:
