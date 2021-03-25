@@ -40,10 +40,10 @@ Provided is a Docker file that can be used to dockerize  your Panther Client app
 * Enter the container:
   docker exec -ti pantherweb bash
  
+  ### Panther Editor 
 * Open the Panther Editor using the command
   prodev
 
-* Test Web Samples(included in image):
   ### Web Samples:
   * You may run the character mode browser to serve up a Panther html screen like this
     lynx localhost:8080/PantherDemo/login
