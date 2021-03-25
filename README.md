@@ -9,6 +9,7 @@ Provided is a Dockerfile that can be used to dockerize  your Panther Client appl
   
   Provided in Container
   * Panther Client 5.5*
+  * JDK 8
   * docker-entrypoint.sh (Panther App running)
     
  # Downloading the Panther Docker image::
@@ -17,7 +18,7 @@ Provided is a Dockerfile that can be used to dockerize  your Panther Client appl
   docker pull prolificspanther/pantherclient  
    
  # Contents of the container:
- * JDK
+ * JDK 8
  * Ubuntu
  * Panther Client 553.07 (License Inclusive)
  
