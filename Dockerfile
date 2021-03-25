@@ -46,11 +46,8 @@ COPY prlstdwb553.07 /Apps/ProlificsContainer/prlstdwb553.07
 
 #Unpacking Panther and creating space for logs
 RUN mkdir -p /Apps/ProlificsContainer/TestMigration
-# COPY migration /Apps/ProlificsContainer/TestMigration
-# RUN mkdir -p /Apps/ProlificsContainer/TestMigration/UI
-# COPY UI /Apps/ProlificsContainer/TestMigration/UI
 RUN mkdir -p /Apps/ProlificsContainer/TestMigration/error
-# RUN mkdir -p /Apps/ProlificsContainer/TestMigration/web
+
 
 
 #Setting up environment for Panther Web
