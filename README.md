@@ -9,7 +9,7 @@ Provided is a Dockerfile that can be used to dockerize  your Panther Client appl
   
   Provided in Container
   * Panther 5.5*
-  * JDK
+  * JDK 8
   * Linux Server(Ubuntu)
   * Tomcat.zip(included)
   * TestMigration.zip(included)
@@ -24,7 +24,7 @@ Provided is a Dockerfile that can be used to dockerize  your Panther Client appl
    docker pull prolificspanther/pantherweb  
    
  # Contents of the container:
- * JDK 1.8
+ * JDK 8
  * Ubuntu
  * Panther Web 553.07 (License Inclusive)
  * Tomcat (Configured)
@@ -32,7 +32,7 @@ Provided is a Dockerfile that can be used to dockerize  your Panther Client appl
  * PantherDemo.ini file for Panther Web (Configured)
  
  # How to use this Image
-   This image is designed to be used in your Panther Web Enviroment in your Red Hat server. Installing a Panther Web Docker image should take less than 10 minutes to setup. Once    complete you will be able run our sample testcases.
+   This image is designed to be used in your Panther Web Enviroment in your Ubuntu server. Installing a Panther Web Docker image should take less than 10 minutes to setup. Once    complete you will be able run our sample testcases.
  
 * Creating the container:
   docker run --name=pantherweb -p8080:8080 -d prolificspanther/pantherweb
