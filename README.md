@@ -33,7 +33,8 @@ Provided is a Dockerfile that can be used to dockerize  your Panther Client appl
   docker exec -ti pantherclient bash
 
 * Run the command( to test prodev):
-Run the command "prodev"
+  
+  Run the command "prodev"
   
 # To access the image from Openshift:
 1) Create a Project
