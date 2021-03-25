@@ -19,7 +19,7 @@ Provided is a Dockerfile that can be used to dockerize  your Panther Client appl
    
  # Contents of the container:
  * JDK 8
- * Ubuntu
+ * Ubuntu 20.04
  * Panther Client 553.07 (License Inclusive)
  
  # How to use this Image
@@ -31,7 +31,8 @@ Provided is a Dockerfile that can be used to dockerize  your Panther Client appl
 * Enter the container:
   docker exec -ti pantherclient bash
 
-* Test our Samples(included in image):
+* Run the command( to test prodev):
+Run the command "prodev"
   
 # To access the image from Openshift:
 1) Create a Project
