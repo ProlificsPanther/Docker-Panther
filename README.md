@@ -1,4 +1,4 @@
-# Dockerize Panther Web
+# Panther Web Docker
 Provided is a Docker file that can be used to dockerize  your Panther Client application. Also included are samples of a Panther Docker image  that can  be pulled directly using the docker pull command from [Docker Hub](https://hub.docker.com/repository/docker/prolificspanther/pantherweb).
 
 ### Usage
@@ -46,6 +46,7 @@ Provided is a Docker file that can be used to dockerize  your Panther Client app
 
   ### Web Samples:
   * You may run the character mode browser to serve up a Panther html screen like this
+  
     lynx localhost:8080/PantherDemo/login
     OR
     lynx localhost:8080/PantherDemo/orders
