@@ -31,7 +31,7 @@ Provided is a Docker file that can be used to dockerize  your Panther Client app
  * Panther Servlet
  * PantherDemo.ini file for Panther Web (Configured)
  
- # How to use this Image
+ # How to use this Image:
    This image is designed to be used in your Panther Web Enviroment on your Ubuntu server. Installing a Panther Web Docker image should take less than 10 minutes to setup. Once    complete you will be able to run our sample testcases.
  
 * Creating the container:
@@ -40,7 +40,7 @@ Provided is a Docker file that can be used to dockerize  your Panther Client app
 * Enter the container:
   docker exec -ti pantherweb bash
  
-  ### Panther Editor 
+  ### Panther Editor: 
 * Open the Panther Editor using the command
   prodev
 
