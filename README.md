@@ -1,5 +1,5 @@
 # Dockerize Panther Client
-Provided is a Dockerfile that can be used to dockerize  your Panther Client application. Also provided are samples of a Docker Panther image  that can  be pulled directly using  the docker pull command from [Docker Hub](https://hub.docker.com/repository/docker/prolificspanther/pantherclient).  
+Provided is a Docker file that can be used to dockerize  your Panther Client application. Also included are samples of a Panther Docker image  that can  be pulled directly using  the docker pull command from [Docker Hub](https://hub.docker.com/repository/docker/prolificspanther/pantherclient).  
 
 ### Usage
 * Panther Client 5.5*
@@ -42,11 +42,10 @@ Provided is a Dockerfile that can be used to dockerize  your Panther Client appl
 3) Search for "prolificspanther/pantherclient", specify the name.
 4) Click "Deploy".
 5) Go to the Pods section, as soon as it changes from "Creating container" to "Running", enter into the Pod and switch to "Terminal" tab.
-6) Run the command( to test prodev):
-Run the command "prodev"
+6) Run the command( to test prodev): > "prodev"
  
 ## Issues
-If you face any kind of issues with this image, report them [here](https://github.com/ProlificsPanther/Docker-Panther/issues)
+If you face any issues with this image, report them [here](https://github.com/ProlificsPanther/Docker-Panther/issues)
 
 ## Contribution
 You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
