@@ -46,10 +46,9 @@ Provided is a Docker file that can be used to dockerize  your Panther Client app
 
   ### Web Samples:
   * You may run the character mode browser to serve up a Panther html screen like this
-  
-    lynx localhost:8080/PantherDemo/<<screenname>>
-    Replace <screenname> with login, orders or customer
-  
+    lynx localhost:8080/PantherDemo/myscreen
+    Replace myscreen with the screens:login, orders or custo
+
   * You may accees the Panther Web application from a UI browser like this. <IP>:8080/PantherDemo/PantherDemo/login
 
 Note: Port 8080 on your host system must be enabled to communicate externally.
@@ -63,8 +62,8 @@ Note: Port 8080 on your host system must be enabled to communicate externally.
 6) Open the Panther Editor using the command
   prodev
 7) To serve up a Panther html screen   use the command below. Lynx is a character mode browser
- lynx localhost:8080/PantherDemo/ <screenname>
- Replace <screenname> with login, orders or custo
+  lynx localhost:8080/PantherDemo/myscreen
+  Replace myscreen with the screens:login, orders or customer
 
 ## Issues
 If you face any issues with this image, report them [here](https://github.com/ProlificsPanther/Docker-Panther/issues)
