@@ -40,41 +40,26 @@ Provided is a Docker file that can be used to dockerize  your Panther Client app
 
 * Enter the container(To be used in non-UI base OS & for migrating the screens):
   docker exec -ti pantherweb bash
+ 
+* Open the Panther Editor using the command >prodev
 
-* Test our Samples(included in image):
+* Test our Web Samples(included in image):
   
-  ### Character Mode:
-  * Run prodev: "prodev" (Without Quotes)
-  * Run proweb:
+  ### Web Sample:
+  * You may run the character mode browser to serve up a Panther html screen like this
     lynx localhost:8080/PantherDemo/login
     OR
     lynx localhost:8080/PantherDemo/orders
     OR
     lynx localhost:8080/PantherDemo/customer
   
- * You may access our Migration Utility(Do this from a separate maximized Terminal) : java -jar migration.jar
+ * * Please access the following URL from an OS with UI enabled:
 
- * Please access the following URL from an OS with UI enabled:
-
-(IP):8080/PantherDemo/PantherDemo/(screen_name_you_ran_the_migration_utility_on)
+  * You may accees the Panther Web application from a UI browser like this. (IP):8080/PantherDemo/PantherDemo/login
 
 Note: This will only work if you've enabled port 8080 on your host system to communicate externally.
 
-### For base OS with UI:
-* For prodev: Just run "prodev" (without double quotes)
-* For accessing the Panther screens using proweb:
-
-  Call the URL from the browser:
-  localhost:8080/PantherDemo/PantherDemo/login
-  OR
-  localhost:8080/PantherDemo/PantherDemo/orders
-  OR
-  localhost:8080/PantherDemo/PantherDemo/customer
-
- * Run the migration utility(Do this from a Terminal):
-   java -jar migration.jar
-
- Recall the URL with the screen name that you ran the migration utility on the browser to see the changes
+  Recall the URL with the screen name that you ran the migration utility on the browser to see the changes
 
 # To access the image from Openshift:
 1) Create a Project
