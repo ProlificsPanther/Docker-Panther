@@ -47,9 +47,9 @@ Provided is a Docker file that can be used to dockerize  your Panther Client app
   ### Web Samples:
   * You may run the character mode browser to serve up a Panther html screen like this
     lynx localhost:8080/PantherDemo/myscreen
-    Replace myscreen with the screens:login, orders or custo
+    Replace myscreen with the screens:login, orders or customer
 
-  * You may accees the Panther Web application from a UI browser like this. <IP>:8080/PantherDemo/PantherDemo/login
+  * You may access the Panther Web application from a UI browser like this. IPAddress:8080/PantherDemo/PantherDemo/login
 
 Note: Port 8080 on your host system must be enabled to communicate externally.
 
@@ -61,7 +61,7 @@ Note: Port 8080 on your host system must be enabled to communicate externally.
 5) Go to the Pods section, as soon as it changes from "Creating container" to "Running", enter into the Pod and switch to "Terminal" tab.
 6) Open the Panther Editor using the command
   prodev
-7) To serve up a Panther html screen   use the command below. Lynx is a character mode browser
+7) To serve up a Panther html sample screen  use the command below. Lynx is a character mode browser
   lynx localhost:8080/PantherDemo/myscreen
   Replace myscreen with the screens:login, orders or customer
 
