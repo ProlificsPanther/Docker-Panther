@@ -25,7 +25,7 @@ Provided is a Dockerfile that can be used to dockerize  your Panther Client appl
    
  # Contents of the container:
  * JDK 1.8
- * Red Hat
+ * Ubuntu
  * Panther Web 553.07 (License Inclusive)
  * Tomcat (Configured)
  * Panther Servlet
