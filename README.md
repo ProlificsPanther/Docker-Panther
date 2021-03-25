@@ -54,16 +54,16 @@ Provided is a Docker file that can be used to dockerize  your Panther Client app
 Note: Port 8080 on your host system must be enabled to communicate externally.
 
 # To access the image from Openshift:
-1) Create a Project
-2) Click on Deploy an image
-3) Search for "prolificspanther/pantherweb", specify the name.
-4) Click "Deploy".
-5) Go to the Pods section, as soon as it changes from "Creating container" to "Running", enter into the Pod and switch to "Terminal" tab.
-6) Open the Panther Editor using the command
-  prodev
-7) To serve up a Panther html sample screen  use the command below. Lynx is a character mode browser
-  lynx localhost:8080/PantherDemo/myscreen
-  Replace myscreen with the screens:login, orders or customer
+  * Create a Project
+  * Click on Deploy an image
+  * Search for "prolificspanther/pantherweb", specify the name.
+  * Click "Deploy".
+  * Go to the Pods section, as soon as it changes from "Creating container" to "Running", enter into the Pod and switch to "Terminal" tab.
+  * Open the Panther Editor using the command
+    prodev
+  * To serve up a Panther html sample screen  use the command below. Lynx is a character mode browser
+    lynx localhost:8080/PantherDemo/myscreen
+    Replace myscreen with the screens:login, orders or customer
 
 ## Issues
 If you face any issues with this image, report them [here](https://github.com/ProlificsPanther/Docker-Panther/issues)
