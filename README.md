@@ -19,9 +19,8 @@ Provided is a Docker file that can be used to dockerize  your Panther Client app
  # Prerequisites: (Optional)
    Enable port 8080 from your host machine to access the Panther Web application from other clients.
     
- # Downloading the Panther Docker image::
-   Use the command  below
-   
+ # Download the Panther Docker image:
+    
    docker pull prolificspanther/pantherweb  
    
  # Contents of the container:
@@ -33,19 +32,20 @@ Provided is a Docker file that can be used to dockerize  your Panther Client app
  * PantherDemo.ini file for Panther Web (Configured)
  
  # How to use this Image
-   This image is designed to be used in your Panther Web Enviroment in your Ubuntu server. Installing a Panther Web Docker image should take less than 10 minutes to setup. Once    complete you will be able to run our sample testcases.
+   This image is designed to be used in your Panther Web Enviroment on your Ubuntu server. Installing a Panther Web Docker image should take less than 10 minutes to setup. Once    complete you will be able to run our sample testcases.
  
 * Creating the container:
   docker run --name=pantherweb -p8080:8080 -d prolificspanther/pantherweb
 
-* Enter the container(To be used in non-UI base OS & for migrating the screens):
+* Enter the container:
   docker exec -ti pantherweb bash
  
-* Open the Panther Editor using the command >prodev
+* Open the Panther Editor using the command
+  prodev
 
-* Test our Web Samples(included in image):
+* Test Web Samples(included in image):
   
-  ### Web Sample:
+  ### Web Samples:
   * You may run the character mode browser to serve up a Panther html screen like this
     lynx localhost:8080/PantherDemo/login
     OR
@@ -53,13 +53,9 @@ Provided is a Docker file that can be used to dockerize  your Panther Client app
     OR
     lynx localhost:8080/PantherDemo/customer
   
- * * Please access the following URL from an OS with UI enabled:
+  * You may accees the Panther Web application from a UI browser like this. <IP>:8080/PantherDemo/PantherDemo/login
 
-  * You may accees the Panther Web application from a UI browser like this. (IP):8080/PantherDemo/PantherDemo/login
-
-Note: This will only work if you've enabled port 8080 on your host system to communicate externally.
-
-  Recall the URL with the screen name that you ran the migration utility on the browser to see the changes
+Note: Port 8080 on your host system must be enabled to communicate externally.
 
 # To access the image from Openshift:
 1) Create a Project
