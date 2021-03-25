@@ -10,7 +10,7 @@ Provided is a Dockerfile that can be used to dockerize  your Panther Client appl
   Provided in Container
   * Panther 5.5*
   * JDK 8
-  * Linux Server(Ubuntu)
+  * Linux Server(Ubuntu 20.04)
   * Tomcat.zip(included)
   * TestMigration.zip(included)
   * lynx.rpm (character mode browser, suited for Linux systems)
