@@ -1,5 +1,5 @@
 # Dockerize Panther Web
-Provided is a Dockerfile that can be used to dockerize  your Panther Client application. Also provided are samples of a Docker Panther image  that can  be pulled directly using the docker pull command from [Docker Hub](https://hub.docker.com/repository/docker/prolificspanther/pantherweb).
+Provided is a Docker file that can be used to dockerize  your Panther Client application. Also included are samples of a Panther Docker image  that can  be pulled directly using the docker pull command from [Docker Hub](https://hub.docker.com/repository/docker/prolificspanther/pantherweb).
 
 ### Usage
 * Panther Web 5.5*
@@ -17,7 +17,7 @@ Provided is a Dockerfile that can be used to dockerize  your Panther Client appl
   * docker-entrypoint.sh (keeps Catalina and Panther App running)
   
  # Prerequisites: (Optional)
-   Enable port 8080 from your host machine so that you can check your URL outside the host machine also.
+   Enable port 8080 from your host machine to access the Panther Web application from other clients.
     
  # Downloading the Panther Docker image::
    Use the command  below
@@ -33,7 +33,7 @@ Provided is a Dockerfile that can be used to dockerize  your Panther Client appl
  * PantherDemo.ini file for Panther Web (Configured)
  
  # How to use this Image
-   This image is designed to be used in your Panther Web Enviroment in your Ubuntu server. Installing a Panther Web Docker image should take less than 10 minutes to setup. Once    complete you will be able run our sample testcases.
+   This image is designed to be used in your Panther Web Enviroment in your Ubuntu server. Installing a Panther Web Docker image should take less than 10 minutes to setup. Once    complete you will be able to run our sample testcases.
  
 * Creating the container:
   docker run --name=pantherweb -p8080:8080 -d prolificspanther/pantherweb
@@ -41,18 +41,18 @@ Provided is a Dockerfile that can be used to dockerize  your Panther Client appl
 * Enter the container(To be used in non-UI base OS & for migrating the screens):
   docker exec -ti pantherweb bash
 
-* Test our Samples(already packed in image):
+* Test our Samples(included in image):
   
-  ### For Non-UI base:
-    * Run prodev: "prodev" (Without Quotes)
+  ### Character Mode:
+  * Run prodev: "prodev" (Without Quotes)
   * Run proweb:
     lynx localhost:8080/PantherDemo/login
-  OR
-  lynx localhost:8080/PantherDemo/orders
-  OR
-  lynx localhost:8080/PantherDemo/customer
+    OR
+    lynx localhost:8080/PantherDemo/orders
+    OR
+    lynx localhost:8080/PantherDemo/customer
   
- * Run the migration utility(Do this from a separate maximized Terminal) : java -jar migration.jar
+ * You may access our Migration Utility(Do this from a separate maximized Terminal) : java -jar migration.jar
 
  * Please access the following URL from an OS with UI enabled:
 
