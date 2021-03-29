@@ -34,7 +34,7 @@ Provided is a Docker file that can be used to dockerize  your Panther Client app
 
 * Open the Panther Editor using the command > prodev
   
-# To access the image from Openshift:
+# To access the image from Red Hat OpenShift:
 1) Create a Project
 2) Click on Deploy an image
 3) Search for "prolificspanther/pantherclient", specify the name.
