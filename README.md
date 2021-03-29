@@ -54,7 +54,7 @@ Provided is a Docker file that can be used to dockerize  your Panther Client app
 
 Note: Port 8080 on your host system must be enabled to communicate externally.
 
-# To access the image from Openshift:
+# To access the image from Red Hat OpenShift:
   * Create a Project
   * Click on Deploy an image
   * Search for "prolificspanther/pantherweb", specify the name.
