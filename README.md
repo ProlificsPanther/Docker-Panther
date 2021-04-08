@@ -37,14 +37,14 @@ Provided is a Docker file that can be used to dockerize  your Panther Client app
 * To Run a sample Panther client application use command > prorun mgmt (Name of Panther screen). 
   
 # To access the image from Red Hat OpenShift:
-1) Create a Project
-2) Click on Deploy an image
-3) Enter image name "prolificspanther/pantherclient", specify the name of componenet.
-4) Click "Create".
-5) In Pods section, select your Pod it will open a new Pod window.
-6) Enter into the Pod by click on its name and switch to "Terminal" tab.
-7) Run the command( to test prodev): > "prodev"
-8) Run the command (to test sample Panther client app):>prorun mgmt (Name of Panther screen).
+* Create a Project
+* Click on Deploy an image
+* Enter image name "prolificspanther/pantherclient", specify the name of componenet.
+* Click "Create".
+* In Pods section, select your Pod it will open a new Pod window.
+* Enter into the Pod by click on its name and switch to "Terminal" tab.
+* Run the command( to test prodev): > "prodev"
+* Run the command (to test sample Panther client app):>prorun mgmt (Name of Panther screen).
  
 ## Issues
 If you face any issues with this image, report them [here](https://github.com/ProlificsPanther/Docker-Panther/issues)
