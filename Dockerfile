@@ -5,16 +5,10 @@ FROM ubuntu
 LABEL Author="Panther Support"
 LABEL Corporation="Prolifics Inc."
 
-
-#Setup lib
-WORKDIR /usr/lib64
-RUN apt-get update  &&\   
-    apt-get install libjpeg62 
-RUN apt-get install -y libxm4
-
 #Setting up JDK
 RUN mkdir -p /Apps/ProlificsContainer
 WORKDIR /Apps/ProlificsContainer
+
 # Install OpenJDK-8
 RUN apt-get update && \
     apt-get install -y openjdk-8-jdk && \
@@ -48,11 +42,9 @@ COPY prlstdwb553.07 /Apps/ProlificsContainer/prlstdwb553.07
 RUN mkdir -p /Apps/ProlificsContainer/TestMigration
 RUN mkdir -p /Apps/ProlificsContainer/TestMigration/error
 
-
-
-#Setting up environment for Panther Web
+#Setting up environment for Panther
 ENV SMBASE=/Apps/ProlificsContainer/prlstdwb553.07
-ENV PATH=$SMBASE/util:$SMBASE/config:${CATALINA_HOME}/bin
+ENV PATH=$SMBASE/util:$SMBASE/config
 ENV SMPATH=$SMBASE/util:$SMBASE/config
 ENV LM_LICENSE_FILE=$SMBASE/licenses/license.dat
 ENV LD_LIBRARY_PATH=$SMBASE/lib:/usr/lib64:/lib64
