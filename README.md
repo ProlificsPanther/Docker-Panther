@@ -41,30 +41,31 @@ Provided is a Docker file that can be used to dockerize  your Panther Client app
   docker exec -ti pantherweb bash
  
   ### Panther Editor: 
-  * Open the Panther Editor using the command
-  prodev
+  * Open the Panther Editor using the command > prodev
+  
+  * To Run a sample Panther client application use command > prorun mgmt (Name of Panther screen).
 
   ### Web Samples:
   * You may run the character mode browser to serve up a Panther html screen like this
     
-    lynx localhost:8080/PantherDemo/myscreen
-    Replace myscreen with the screens:login, orders or customer
+    lynx localhost:8080/PantherDemo/login
 
   * You may access the Panther Web application from a UI browser like this. IPAddress:8080/PantherDemo/PantherDemo/login
 
 Note: Port 8080 on your host system must be enabled to communicate externally.
 
 # To access the image from Red Hat OpenShift:
-  * Create a Project
-  * Click on Deploy an image
-  * Search for "prolificspanther/pantherweb", specify the name.
-  * Click "Deploy".
-  * Go to the Pods section, as soon as it changes from "Creating container" to "Running", enter into the Pod and switch to "Terminal" tab.
-  * Open the Panther Editor using the command
-    prodev
+* Create a Project
+* Click on Deploy an image
+* Enter image name "prolificspanther/pantherclient", specify the name of componenet.
+* Click "Create".
+* In Pods section, select your Pod it will open a new Pod window.
+* Enter into the Pod by click on its name and switch to "Terminal" tab.
+* Run the command( to test prodev): > "prodev"
+* Run the command (to test sample Panther client app):>prorun mgmt (Name of Panther screen).
   * To serve up a Panther html sample screen  use the command below. Lynx is a character mode browser
-    lynx localhost:8080/PantherDemo/myscreen
-    Replace myscreen with the screens:login, orders or customer
+    lynx localhost:8080/PantherDemo/login
+    
 
 ## Issues
 If you face any issues with this image, report them [here](https://github.com/ProlificsPanther/Docker-Panther/issues)
