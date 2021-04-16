@@ -43,7 +43,7 @@ Provided is a Docker file that can be used to dockerize  your Panther Client app
   ### Panther Editor: 
   * Open the Panther Editor using the command > prodev
   
-  * To Run a sample Panther client application use command > prorun mgmt (Name of Panther screen).
+  * To Run a sample Panther client application use command > prorun mgmt (Name of Panther screen)
 
   ### Web Samples:
   * You may run the character mode browser to serve up a Panther html screen like this
