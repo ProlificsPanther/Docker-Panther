@@ -13,7 +13,7 @@ Provided is a Docker file that can be used to dockerize  your Panther Client app
   * Linux Server(Ubuntu 20.04)
   * docker-entrypoint.sh (Container running)
     
- # Downloading the Panther Docker image::
+ # Download the Panther Docker image::
    Use the command  below
    
   docker pull prolificspanther/pantherclient  
