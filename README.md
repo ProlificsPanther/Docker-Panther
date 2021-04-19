@@ -17,7 +17,7 @@ The Docker file can be used to dockerize  your Panther Client application. Also 
    Use the command  below
    
   docker pull prolificspanther/pantherclient  
-  (Pull and run Panther Client Docker image on Red Hat) (video) [https://www.youtube.com/watch?v=RNKzJbCebaU&list=PLqs5lOxsEMidwKXCOec5d_f6UXsZtuYhf&index=4]
+  [Pull and run a Red Hat Panther Client Docker image] (video) (https://www.youtube.com/watch?v=RNKzJbCebaU&list=PLqs5lOxsEMidwKXCOec5d_f6UXsZtuYhf&index=4)
   
    
  # Contents of the container:
