@@ -1,14 +1,14 @@
 # Panther Web Docker
-Provided is a Docker file that can be used to dockerize  your Panther Client application. Also included are samples of a Panther Docker image  that can  be pulled directly using the docker pull command from [Docker Hub](https://hub.docker.com/repository/docker/prolificspanther/pantherweb).
+The Docker file can be used to dockerize  your Panther Web applications. Also included are samples of a Panther Docker image  that can  be pulled directly using the docker pull command from [Docker Hub](https://hub.docker.com/repository/docker/prolificspanther/pantherweb).
 
 ### Usage
-* Panther Web 5.5*
+* Panther Web 5.53
 
 # Prerequisites: (Required)
   * Install Docker Engine from  https://docs.docker.com/get-docker/ 
   
   Provided in Container
-  * Panther 5.5*
+  * Panther 5.53
   * JDK 8
   * Linux Server(Ubuntu 20.04)
   * Tomcat.zip(included)
@@ -26,7 +26,7 @@ Provided is a Docker file that can be used to dockerize  your Panther Client app
  # Contents of the container:
  * JDK 8
  * Ubuntu 20.04
- * Panther Web 553.07 (License Inclusive)
+ * Panther Web 5.53.07 (License Incuded)
  * Tomcat (Configured)
  * Panther Servlet
  * PantherDemo.ini file for Panther Web (Configured)
@@ -59,8 +59,8 @@ Note: Port 8080 on your host system must be enabled to communicate externally.
 * Click on Deploy an image
 * Enter image name "prolificspanther/pantherclient", specify the name of componenet.
 * Click "Create".
-* In Pods section, select your Pod it will open a new Pod window.
-* Enter into the Pod by click on its name and switch to "Terminal" tab.
+* In Pods section, select your Pod. A new Pod window will open.
+* Enter into the Pod by clicking on its name and switch to "Terminal" tab.
 * Run the command( to test prodev): > "prodev"
 * Run the command (to test sample Panther client app):>prorun mgmt (Name of Panther screen).
   * To serve up a Panther html sample screen  use the command below. Lynx is a character mode browser
