@@ -1,4 +1,4 @@
-# Dockerize Panther Client
+# Dockerize Panther Client applications
 The Docker file can be used to dockerize  your Panther Client application. Also included are samples of a Panther Docker image  that can  be pulled directly using  the docker pull command from [Docker Hub](https://hub.docker.com/repository/docker/prolificspanther/pantherclient).  
 
 ### Usage
