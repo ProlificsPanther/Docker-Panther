@@ -2,13 +2,13 @@
 Provided is a Docker file that can be used to dockerize  your Panther Client application. Also included are samples of a Panther Docker image  that can  be pulled directly using  the docker pull command from [Docker Hub](https://hub.docker.com/repository/docker/prolificspanther/pantherclient).  
 
 ### Usage
-* Panther Client 5.5*
+* Panther Client 5.53
 
 # Prerequisites: (Required)
   * Install Docker Engine from  https://docs.docker.com/get-docker/ 
   
   Provided in Container
-  * Panther Client 5.5*
+  * Panther Client 5.53
   * JDK 8
   * Linux Server(Ubuntu 20.04)
   * docker-entrypoint.sh (Container running)
@@ -21,7 +21,7 @@ Provided is a Docker file that can be used to dockerize  your Panther Client app
  # Contents of the container:
  * JDK 8
  * Ubuntu 20.04
- * Panther Client 553.07 (License Inclusive)
+ * Panther Client 5.53.07 (License Inclusive)
  
  # How to use this Image
    This image is designed to run Panther Client in  an Ubuntu based container. 
