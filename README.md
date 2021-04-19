@@ -23,6 +23,8 @@ The Docker file can be used to dockerize  your Panther Web applications. Also in
     
    docker pull prolificspanther/pantherweb  
    
+  [Deploying Panther Web Docker Image on OpenShift (video)] https://www.youtube.com/watch?v=sd8FwzTQZm4&list=PLqs5lOxsEMidwKXCOec5d_f6UXsZtuYhf&index=5)
+  
  # Contents of the container:
  * JDK 8
  * Ubuntu 20.04
