@@ -45,14 +45,14 @@ The Docker file can be used to dockerize  your Panther Web applications. Also in
   ### Panther Editor: 
   * Open the Panther Editor using the command > prodev
   
-  * To Run a sample Panther client application use command > prorun mgmt (Name of Panther screen)
+  * To executea sample Panther client application, use command > prorun mgmt (mgmt is the name of the panther screen)
 
   ### Web Samples:
   * You may run the character mode browser to serve up a Panther html screen like this
     
     lynx localhost:8080/PantherDemo/login
 
-  * You may access the Panther Web application from a UI browser like this. IPAddress:8080/PantherDemo/PantherDemo/login
+  * Access the Panther Web application from a UI browser like this. IPAddress:8080/PantherDemo/PantherDemo/login
 
 Note: Port 8080 on your host system must be enabled to communicate externally.
 
