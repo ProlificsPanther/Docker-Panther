@@ -41,8 +41,8 @@ Provided is a Docker file that can be used to dockerize  your Panther Client app
 * Click on Deploy an image
 * Enter image name "prolificspanther/pantherclient", specify the name of componenet.
 * Click "Create".
-* In Pods section, select your Pod it will open a new Pod window.
-* Enter into the Pod by click on its name and switch to "Terminal" tab.
+* In the Pods section, select your Pod. A new Pod window will open.
+* Enter into the Pod by clicking on its name and switch to "Terminal" tab.
 * Run the command( to test prodev): > "prodev"
 * Run the command (to test sample Panther client app):>prorun mgmt (Name of Panther screen).
  
