@@ -36,7 +36,7 @@ The Docker file can be used to dockerize  your Panther Client application. Also 
 
 * Open the Panther Editor using the command > prodev
 
-* To run a sample Panther client application(runtime) use command > prorun mgmt (Name of Panther screen). 
+* To run a sample Panther client application(runtime) use command > prorun mgmt (name of panther screen). 
   
 # To access the image from Red Hat OpenShift:
 * Create a Project
