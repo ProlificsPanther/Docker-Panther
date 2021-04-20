@@ -20,7 +20,6 @@ RUN apt-get update && \
     apt-get install ca-certificates-java && \
     apt-get clean && \
     update-ca-certificates -f;
-ENV SMJAVALIBRARY=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64/server/libjvm.so
 
 # Setup JAVA_HOME -- useful for Docker command line
 ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
